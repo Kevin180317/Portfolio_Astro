@@ -1,0 +1,36 @@
+---
+import TimeLineItem from "./TimeLineItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarollador Software - E-Commetrics",
+    description:
+    "Desarrollo diferentes tipos de paginas web con diferentes tecnologias, como React, Node, Express, MySQL, Astro, nextjs, etc.",
+    link: "https://e-commetrics.com/",
+  },
+  {
+    date: "Julio 2022",
+    title: "Desarollador Software - Cenyca Universidad",
+    description:
+    "El Desarollo fue elaborado con Laravel, Vuejs, MySQL, etc. Con el objetivo de crear una plataforma para la universidad de Tijuana, Baja california con un enfoque Administrativo, Estudiantial y De Docencia para facilitar las tareas que se realizan en dicha institucion.",
+  },
+  {
+    date: "Noviembre 2021",
+    title: "Desarollo Movil - Cuidados Paliativos",
+    description:
+    "El Desarollo fue elaborado Android(Java) y Swift(iOS) todo conectado a la base de datos y diferentes funciones de GOOGLE Firebase para crear una aplicacion movil para el area medica con el enfoque de poder realizar citas medicas con la facilidad de no hacer fila de espera y poder encontrar el medico indicado para la salud del usuario. "
+    ,
+    link: "https://play.google.com/store/apps/details?id=com.cuidados.paliativos&hl=es_PY&gl=US"
+  }
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <TimeLineItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
