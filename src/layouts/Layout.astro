@@ -23,7 +23,9 @@ const { description, title } = Astro.props
   </head>
 
   <body class="relative text-black dark:text-white">
-	<div class="absolute inset-0 -z-10 h-full w-screen items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+	<div class="absolute inset-0 -z-10 h-full w-screen items-center px-5 py-24 bg-gray-50 dark:bg-gray-950
+  bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+  dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(128,0,128,0.3),rgba(255,255,255,0))]"></div>
     <Header />
     <slot />
     <Footer />
@@ -32,7 +34,7 @@ const { description, title } = Astro.props
 
 <style is:global>
   :root {
-    color-scheme: light dark;
+    color-scheme:  dark light;
   }
 
   html {
