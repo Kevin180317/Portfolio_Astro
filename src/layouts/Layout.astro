@@ -1,14 +1,14 @@
 ---
-import "@fontsource-variable/onest"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
-const { description, title } = Astro.props
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,13 +20,21 @@ const { description, title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta
+      name="google-site-verification"
+      content="SrFUXIzZgV3WUkvq4KfzIx6VTeOKyxwm0NeLq-JLJCw"
+    />
   </head>
 
   <body class="relative text-black dark:text-white">
-	<div class="absolute inset-0 -z-10 h-full w-screen items-center px-5 py-24 bg-gray-50 dark:bg-gray-950
+    <div
+      class="absolute inset-0 -z-10 h-full w-screen items-center px-5 py-24 bg-gray-50 dark:bg-gray-950
   bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-  dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(128,0,128,0.3),rgba(255,255,255,0))]"></div>
+  dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(128,0,128,0.3),rgba(255,255,255,0))]"
+    >
+    </div>
     <Header />
+
     <slot />
     <Footer />
   </body>
@@ -34,7 +42,7 @@ const { description, title } = Astro.props
 
 <style is:global>
   :root {
-    color-scheme:  dark light;
+    color-scheme: dark light;
   }
 
   html {
@@ -113,6 +121,6 @@ const { description, title } = Astro.props
   }
 
   .link-active {
-        @apply bg-white/40 font-semibold dark:bg-white/15 shadow-lg shadow-white/20 backdrop-blur-2xl;
-      }
+    @apply bg-white/40 font-semibold dark:bg-white/15 shadow-lg shadow-white/20 backdrop-blur-2xl;
+  }
 </style>
