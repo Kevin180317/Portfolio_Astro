@@ -1,7 +1,6 @@
 ---
 import NextJS from "./icons/NextJS.astro";
 import TailwindIcon from "./icons/Tailwind.astro";
-
 import ReactIcon from "./icons/React.astro";
 import VueIcon from "./icons/Vue.astro";
 import NodeIcon from "./icons/Node.astro";
@@ -13,57 +12,59 @@ import Firebase from "./icons/Firebase.astro";
 ---
 
 <div>
-  <h1 class="text-2xl font-bold mb-4">
+  <h1 class="text-3xl font-bold mb-6 text-start">
     Lenguajes de
-    <span class="text-violet-800 dark:text-violet-200">Programacion</span>
+    <span class="text-violet-800 dark:text-violet-200">Programación</span>
   </h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="flex flex-col gap-4">
-      <h2 class="text-xl font-semibold">Frontend</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <li class="bento-item">
-          <ReactIcon class="w-12 h-12 mx-auto" />
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Frontend Section -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4 text-start">Frontend</h2>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <li class="bento-item col-span-1">
+          <ReactIcon class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">React</span>
         </li>
-        <li class="bento-item">
-          <VueIcon class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-2">
+          <VueIcon class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Vue</span>
         </li>
-        <li class="bento-item">
-          <NextJS class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-2">
+          <NextJS class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Next.js</span>
         </li>
-        <li class="bento-item">
-          <TailwindIcon class="w-12 h-12 mx-auto" />
-          <span class="mt-2 text-black text-center">Tailwind CSS</span>
+        <li class="bento-item col-span-1">
+          <TailwindIcon class="size-12 mx-auto" />
+          <span class="mt-2 text-black text-center">Tailwind</span>
         </li>
-        <li class="bento-item">
-          <AstroFramwork class="w-12 h-12 mx-auto stroke-black" />
+        <li class="bento-item col-span-3">
+          <AstroFramwork class="size-12 mx-auto stroke-black" />
           <span class="mt-2 text-black text-center">Astro</span>
         </li>
       </ul>
     </div>
-    <div class="flex flex-col gap-4">
-      <h2 class="text-xl font-semibold">Backend</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <li class="bento-item">
-          <NodeIcon class="w-12 h-12 mx-auto" />
+    <!-- Backend Section -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4 text-start">Backend</h2>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <li class="bento-item col-span-1">
+          <NodeIcon class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Node.js</span>
         </li>
-        <li class="bento-item">
-          <ExpressIcon class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-2">
+          <ExpressIcon class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Express</span>
         </li>
-        <li class="bento-item">
-          <LaravelIcon class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-2">
+          <LaravelIcon class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Laravel</span>
         </li>
-        <li class="bento-item">
-          <MySQL class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-1">
+          <MySQL class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">MySQL</span>
         </li>
-        <li class="bento-item">
-          <Firebase class="w-12 h-12 mx-auto" />
+        <li class="bento-item col-span-3">
+          <Firebase class="size-12 mx-auto" />
           <span class="mt-2 text-black text-center">Firebase</span>
         </li>
       </ul>
@@ -73,6 +74,7 @@ import Firebase from "./icons/Firebase.astro";
 
 <style>
   .bento-item {
-    @apply flex flex-col items-center p-4 border border-gray-200 rounded-lg bg-white shadow-sm transition-transform transform hover:scale-105;
+    @apply flex flex-col items-center p-6 border border-black rounded-lg bg-white shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl;
+    @apply dark:bg-white dark:border-gray-600 dark:text-white;
   }
 </style>
