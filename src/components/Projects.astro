@@ -1,117 +1,47 @@
 ---
-import NextJS from "./icons/NextJS.astro";
-import Tailwind from "./icons/Tailwind.astro";
-import Notion from "./icons/Notion.astro";
-import Android from "./icons/Android.astro";
-import Swift from "./icons/Swift.astro";
-import Firebase from "./icons/Firebase.astro";
-import Laravel from "./icons/Laravel.astro";
-import MySQL from "./icons/Mysql.astro";
-import Vue from "./icons/Vue.astro";
-import React from "./icons/React.astro";
-import Stripe from "./icons/Stripe.astro";
-import Express from "./icons/Express.astro";
-import NodeJS from "./icons/Node.astro";
-import AstroFramework from "./icons/AstroFramwork.astro";
+import ProjectsDinamic from "./Projects";
 
-const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-[#003159] text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-  Notion: {
-    name: "Notion",
-    class: "bg-[#000000] text-white",
-    icon: Notion,
-  },
-  Android: {
-    name: "Android",
-    class: "bg-[#000] text-white",
-    icon: Android,
-  },
-  Swift: {
-    name: "Swift",
-    class: "bg-[#000] text-white",
-    icon: Swift,
-  },
-  Firebase: {
-    name: "Firebase",
-    class: "bg-[#000] text-white",
-    icon: Firebase,
-  },
-  Laravel: {
-    name: "Laravel",
-    class: "bg-[#000] text-white",
-    icon: Laravel,
-  },
-  MySQL: {
-    name: "MySQL",
-    class: "bg-[#000] text-white",
-    icon: MySQL,
-  },
-  Vue: {
-    name: "Vue",
-    class: "bg-[#000] text-white",
-    icon: Vue,
-  },
-  React: {
-    name: "React",
-    class: "bg-[#000] text-white",
-    icon: React,
-  },
-  Stripe: {
-    name: "Stripe",
-    class: "bg-[#000] text-white",
-    icon: Stripe,
-  },
-  Express: {
-    name: "Express",
-    class: "bg-[#fff] text-black",
-    icon: Express,
-  },
-  NodeJS: {
-    name: "NodeJS",
-    class: "bg-[#fff] text-black",
-    icon: NodeJS,
-  },
-
-  AstroFramework: {
-    name: "Astro",
-    class: "bg-[#000] text-white",
-    icon: AstroFramework,
-  },
-};
 const PROJECTS = [
   {
     title: "Cuidados - Android/iOS",
     description:
       "Cuidados es una aplicacion que le permite al usuario agendar una cita con el medico que sea mas adecuado para sus necesidades.",
     image: "/1.webp",
-    tags: [TAGS.Swift, TAGS.Android, TAGS.Firebase],
+    type: "Prometheus",
+    icon: [
+      {
+        icon: "/Android.svg",
+        name: "Android",
+      },
+      { icon: "/Swift.svg", name: "iOS" },
+    ],
   },
   {
     title: "Cenyca Universidad - Laravel/Vue/Tailwind/MySQL",
     description:
       "Cenyca universidad cuenta con su propia plataforma dividida en tres partes, una para los alumnos, otra para los profesores y otra para el personal administrativo.",
-    // link: "https://svgl.vercel.app/",
-    // github: "https://github.com/pheralb/svgl",
     image: "/laravel.png",
-    tags: [TAGS.MySQL, TAGS.TAILWIND, TAGS.Laravel, TAGS.Vue],
+    type: "FreeLancer",
+
+    icon: [
+      { icon: "/Mysql.svg", name: "MySQL" },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+      { icon: "/Laravel.svg", name: "Laravel" },
+      { icon: "/Vue.svg", name: "Vue" },
+    ],
   },
   {
     title: "Reforma Dental - React/Tailwind",
     description:
       "Reforma dental es una landing page donde se puede encontrar informacion sobre los servicios que ofrece la clinica dental. Y asi mismo poder agendar tu cita con nuestro metodo de calendario y pasarela de pagos con stripe.",
     link: "https://www.reformadental.com/",
-    // github: "https://github.com/pheralb/svgl",
     image: "/reforma.png",
-    tags: [TAGS.React, TAGS.TAILWIND, TAGS.Stripe],
+    type: "Ecommetrica",
+    icon: [
+      { icon: "/React.svg", name: "React" },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+      { icon: "/Stripe.svg", name: "Stripe" },
+    ],
   },
   {
     title: "Dr Arturo Lopez - React/Tailwind",
@@ -119,91 +49,68 @@ const PROJECTS = [
       "Dr Arturo Lopez es una landing page donde se puede encontrar toda informacion que realiza el Dr y poder realizar una cita con el.",
     link: "https://doctorarturolopez.com/",
     image: "/al.png",
-    tags: [TAGS.React, TAGS.TAILWIND],
+    type: "Ecommetrica",
+
+    icon: [
+      { icon: "/React.svg", name: "React" },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+    ],
   },
   {
     title: "Ecommetrica - NextJS/Tailwind/Express/NodeJS/MySQL",
     description:
       "Consultoría de comercio electrónico con un equipo de expertos digitales en marketing y desarrollo técnico, especialmente ensamblado para B2B y B2C.",
     link: "https://ecommetrica.com/",
-    github: "",
     image: "/ecommetrica.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.Express, TAGS.NodeJS, TAGS.MySQL],
+    type: "Ecommetrica",
+
+    icon: [
+      { icon: "/NextJS.svg", name: "Next.js" },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+      { icon: "/Express.svg", name: "Express" },
+      { icon: "/Node.svg", name: "Node.js" },
+      { icon: "/Mysql.svg", name: "MySQL" },
+    ],
   },
   {
     title: "Ricardo Monge",
     description:
       "Recibe la atención en ortopedia con el Dr. Ricardo Monge especializado en lesiones musculoesqueléticas en rodillas, cadera y columna en Tijuana.",
     link: "https://mongeortopedia.com/",
-    github: "",
     image: "/monge.png",
-    tags: [
-      TAGS.AstroFramework,
-      TAGS.React,
-      TAGS.TAILWIND,
-      TAGS.Express,
-      TAGS.NodeJS,
+    type: "Ecommetrica",
+    icon: [
+      {
+        icon: "/AstroFramwork.svg",
+        name: "Astro ",
+        type: "Framework JS",
+      },
+      { icon: "/React.svg", name: "React" },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+      { icon: "/Express.svg", name: "Express" },
+      { icon: "/Node.svg", name: "Node.js" },
     ],
   },
   {
     title: "Transtime",
     description:
-      "Atendemos todas tus necesidades logísticas Ofrecemos un servicio de transporte internacional transparente y confiable, adaptado específicamente a tus requerimientos.",
+      "Atendemos todas tus necesidades logísticas. Ofrecemos un servicio de transporte internacional transparente y confiable, adaptado específicamente a tus requerimientos.",
     link: "https://transtime.site/",
     github: "https://github.com/Kevin180317/Transtime",
     image: "/transtime.png",
-    tags: [TAGS.AstroFramework, TAGS.TAILWIND],
+    type: "FreeLancer",
+    icon: [
+      {
+        icon: "/AstroFramwork.svg",
+        name: "Astro ",
+        type: "Framework JS",
+      },
+      { icon: "/Tailwind.svg", name: "Tailwind" },
+    ],
   },
 ];
 ---
 
 <div class="flex flex-col gap-y-16">
-  {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
-      <article>
-        <h3 class="text-xs md:text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2 overflow-wrap">
-          {title}
-        </h3>
-        <p class="text-lg mb-4 text-pretty">{description}</p>
-        <ul class="flex gap-x-2 flex-col gap-2 md:flex-row mb-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <img
-          loading="lazy"
-          class="rounded shadow-2xl shadow-white/10 aspect-video"
-          src={image}
-          alt={`Captura de pantalla del proyecto ${image}`}
-        />
-        {link && (
-          <a href={link} target="_blank" rel="noopener">
-            <button
-              class="bg-[#003159] text-white rounded-full px-4 py-2 mt-4
-              hover:bg-[#003159/80] transition-colors duration-300 ease-in-out"
-            >
-              Ver proyecto
-            </button>
-          </a>
-        )}
-        {github && (
-          <a href={github} target="_blank" rel="noopener">
-            <button
-              class="bg-[#003159] text-white rounded-full px-4 py-2 mt-4
-              hover:bg-[#003159/80] transition-colors duration-300 ease-in-out"
-            >
-              Ver codigo
-            </button>
-          </a>
-        )}
-      </article>
-    ))
-  }
+  <ProjectsDinamic client:visible PROJECTS={PROJECTS} />
 </div>

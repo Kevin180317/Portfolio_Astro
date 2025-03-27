@@ -16,64 +16,28 @@ import Firebase from "./icons/Firebase.astro";
     Lenguajes de
     <span class="text-violet-800 dark:text-violet-200">Programación</span>
   </h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <div class="flex flex-wrap gap-4">
     <!-- Frontend Section -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4 text-start">Frontend</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-        <li class="bento-item col-span-1">
-          <ReactIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">React</span>
-        </li>
-        <li class="bento-item col-span-2">
-          <VueIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Vue</span>
-        </li>
-        <li class="bento-item col-span-2">
-          <NextJS class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Next.js</span>
-        </li>
-        <li class="bento-item col-span-1">
-          <TailwindIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Tailwind</span>
-        </li>
-        <li class="bento-item col-span-3">
-          <AstroFramwork class="size-12 mx-auto stroke-black" />
-          <span class="mt-2 text-center">Astro</span>
-        </li>
-      </ul>
-    </div>
+    <h2 class="text-2xl font-semibold w-full">Frontend</h2>
+    <span class="chip"><ReactIcon class="size-6" /> React</span>
+    <span class="chip"><VueIcon class="size-6" /> Vue</span>
+    <span class="chip"><NextJS class="size-6" /> Next.js</span>
+    <span class="chip"><TailwindIcon class="size-6" /> Tailwind</span>
+    <span class="chip"><AstroFramwork class="size-6 stroke-black" /> Astro</span
+    >
+
     <!-- Backend Section -->
-    <div>
-      <h2 class="text-2xl font-semibold mb-4 text-start">Backend</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-        <li class="bento-item col-span-1">
-          <NodeIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Node.js</span>
-        </li>
-        <li class="bento-item col-span-2">
-          <ExpressIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Express</span>
-        </li>
-        <li class="bento-item col-span-2">
-          <LaravelIcon class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Laravel</span>
-        </li>
-        <li class="bento-item col-span-1">
-          <MySQL class="size-12 mx-auto" />
-          <span class="mt-2 text-center">MySQL</span>
-        </li>
-        <li class="bento-item col-span-3">
-          <Firebase class="size-12 mx-auto" />
-          <span class="mt-2 text-center">Firebase</span>
-        </li>
-      </ul>
-    </div>
+    <h2 class="text-2xl font-semibold w-full mt-6">Backend</h2>
+    <span class="chip"><NodeIcon class="size-6" /> Node.js</span>
+    <span class="chip"><ExpressIcon class="size-6" /> Express</span>
+    <span class="chip"><LaravelIcon class="size-6" /> Laravel</span>
+    <span class="chip"><MySQL class="size-6" /> MySQL</span>
+    <span class="chip"><Firebase class="size-6" /> Firebase</span>
   </div>
 </div>
 
 <style>
-  .bento-item {
-    @apply flex flex-col items-center p-6 border bg-white text-black hover:bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 hover:text-white border-black rounded-lg  shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl;
+  .chip {
+    @apply flex items-center gap-2 px-4 py-2 border border-gray-300 bg-gray-100 text-gray-700 rounded-full text-sm shadow-sm hover:bg-gray-200 transition;
   }
 </style>
