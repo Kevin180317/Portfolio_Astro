@@ -22,7 +22,7 @@ function ProjectsDinamic({ PROJECTS }) {
               selectedType === type
                 ? "bg-[#003159] text-white"
                 : "bg-gray-200 text-black"
-            } rounded-full px-6 py-2 text-sm font-semibold transition-colors duration-300`}
+            } rounded-full px-6 py-2 text-sm hover:bg-opacity-80 font-semibold transition-colors duration-300`}
           >
             {type}
           </button>
@@ -65,14 +65,14 @@ function ProjectsDinamic({ PROJECTS }) {
             <div className="flex gap-4">
               {link && (
                 <a href={link} target="_blank" rel="noopener">
-                  <button className="bg-[#003159] text-white rounded-full px-4 py-2 mt-4 hover:bg-[#003159/80] transition-colors duration-300 ease-in-out">
+                  <button className="bg-[#003159] hover:bg-opacity-80 text-white rounded-full px-4 py-2 mt-4 hover:bg-[#003159/80] transition-colors duration-300 ease-in-out">
                     Ver proyecto
                   </button>
                 </a>
               )}
               {github && (
                 <a href={github} target="_blank" rel="noopener">
-                  <button className="bg-[#003159] text-white rounded-full px-4 py-2 mt-4 hover:bg-[#003159/80] transition-colors duration-300 ease-in-out">
+                  <button className="bg-[#003159] hover:bg-opacity-80 text-white rounded-full px-4 py-2 mt-4 hover:bg-[#003159/80] transition-colors duration-300 ease-in-out">
                     Ver código
                   </button>
                 </a>
