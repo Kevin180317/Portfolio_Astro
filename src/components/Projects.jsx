@@ -33,7 +33,7 @@ function ProjectsDinamic({ PROJECTS }) {
       {filteredProjects.map(
         ({ image, title, description, link, github, icon }, index) => (
           <article key={index}>
-            <h3 className="text-xs md:text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2 overflow-wrap py-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2 overflow-wrap md:py-4">
               {title}
             </h3>
             <p className="text-lg mb-4 text-pretty">{description}</p>
