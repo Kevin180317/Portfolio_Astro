@@ -13,7 +13,7 @@ function ProjectsDinamic({ PROJECTS }) {
   return (
     <div>
       {/* Filtro estilo chips */}
-      <div className="flex gap-4 mb-6">
+      <div className="flex gap-4 mb-6 flex-wrap">
         {["Todos", "Ecommetrica", "Prometheus", "FreeLancer"].map((type) => (
           <button
             key={type}
@@ -39,7 +39,7 @@ function ProjectsDinamic({ PROJECTS }) {
             <p className="text-lg mb-4 text-pretty">{description}</p>
 
             {/* Mostrar los íconos */}
-            <ul className="flex gap-x-2 flex-col gap-2 md:flex-row mb-2">
+            <ul className="flex gap-x-2 flex-wrap gap-2 flex-row mb-2">
               {icon.map((tag, idx) => (
                 <li key={idx}>
                   <span
