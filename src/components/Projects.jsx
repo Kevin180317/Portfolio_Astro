@@ -62,7 +62,7 @@ function ProjectsDinamic({ PROJECTS }) {
             />
 
             {/* Botones de enlaces */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-4">
               {link && (
                 <a href={link} target="_blank" rel="noopener">
                   <button className="bg-[#003159] hover:bg-opacity-80 text-white rounded-full px-4 py-2 mt-4 hover:bg-[#003159/80] transition-colors duration-300 ease-in-out">

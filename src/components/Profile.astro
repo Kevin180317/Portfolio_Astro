@@ -11,33 +11,185 @@ import MySQL from "./icons/Mysql.astro";
 import Firebase from "./icons/Firebase.astro";
 ---
 
-<div>
-  <h1 class="text-3xl font-bold mb-6 text-start">
-    Lenguajes de
-    <span class="text-violet-800 dark:text-violet-200">Programación</span>
-  </h1>
-  <div class="flex flex-wrap gap-4">
-    <!-- Frontend Section -->
-    <h2 class="text-2xl font-semibold w-full">Frontend</h2>
-    <span class="chip"><ReactIcon class="size-6" /> React</span>
-    <span class="chip"><VueIcon class="size-6" /> Vue</span>
-    <span class="chip"><NextJS class="size-6" /> Next.js</span>
-    <span class="chip"><TailwindIcon class="size-6" /> Tailwind</span>
-    <span class="chip"><AstroFramwork class="size-6 stroke-black" /> Astro</span
+<div class="max-w-6xl mx-auto p-6 md:p-8">
+  <!-- Header Section -->
+  <div class="text-start mb-12">
+    <h1
+      class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
     >
+      Lenguajes de
+      <span
+        class="bg-gradient-to-r from-indigo-600 via-purple-500 to-violet-600 bg-clip-text text-transparent"
+      >
+        Programación
+      </span>
+    </h1>
+
+    <p
+      class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+    >
+      Tecnologías que domino para crear experiencias digitales excepcionales
+    </p>
+  </div>
+
+  <!-- Tech Grid -->
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Frontend Section -->
+    <div
+      class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+    >
+      <!-- Category Header -->
+      <div
+        class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-100 dark:border-gray-700"
+      >
+        <div
+          class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white shadow-md hover:scale-110 hover:rotate-3 transition-transform duration-200"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-xl font-semibold text-gray-800 dark:text-white">
+          Frontend
+        </h2>
+      </div>
+
+      <!-- Frontend Chips -->
+      <div class="flex flex-wrap gap-2 md:gap-3">
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs md:text-sm font-medium hover:bg-blue-100 hover:border-blue-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800 dark:hover:bg-blue-900/30"
+        >
+          <ReactIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          React
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs md:text-sm font-medium hover:bg-blue-100 hover:border-blue-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800 dark:hover:bg-blue-900/30"
+        >
+          <NextJS
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Next.js
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs md:text-sm font-medium hover:bg-blue-100 hover:border-blue-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800 dark:hover:bg-blue-900/30"
+        >
+          <TailwindIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Tailwind CSS
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs md:text-sm font-medium hover:bg-blue-100 hover:border-blue-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800 dark:hover:bg-blue-900/30"
+        >
+          <AstroFramwork
+            class="w-5 h-5 flex-shrink-0 stroke-current group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Astro
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs md:text-sm font-medium hover:bg-blue-100 hover:border-blue-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800 dark:hover:bg-blue-900/30"
+        >
+          <VueIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Vue.js
+        </span>
+      </div>
+    </div>
 
     <!-- Backend Section -->
-    <h2 class="text-2xl font-semibold w-full mt-6">Backend</h2>
-    <span class="chip"><NodeIcon class="size-6" /> Node.js</span>
-    <span class="chip"><ExpressIcon class="size-6" /> Express</span>
-    <span class="chip"><LaravelIcon class="size-6" /> Laravel</span>
-    <span class="chip"><MySQL class="size-6" /> MySQL</span>
-    <span class="chip"><Firebase class="size-6" /> Firebase</span>
+    <div
+      class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+    >
+      <!-- Category Header -->
+      <div
+        class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-100 dark:border-gray-700"
+      >
+        <div
+          class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-white shadow-md hover:scale-110 hover:rotate-3 transition-transform duration-200"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-xl font-semibold text-gray-800 dark:text-white">
+          Backend & Database
+        </h2>
+      </div>
+
+      <!-- Backend Chips -->
+      <div class="flex flex-wrap gap-2 md:gap-3">
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-green-50 text-green-700 border border-green-200 rounded-xl text-xs md:text-sm font-medium hover:bg-green-100 hover:border-green-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-green-900/20 dark:text-green-300 dark:border-green-800 dark:hover:bg-green-900/30"
+        >
+          <NodeIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Node.js
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-green-50 text-green-700 border border-green-200 rounded-xl text-xs md:text-sm font-medium hover:bg-green-100 hover:border-green-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-green-900/20 dark:text-green-300 dark:border-green-800 dark:hover:bg-green-900/30"
+        >
+          <ExpressIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Express
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-green-50 text-green-700 border border-green-200 rounded-xl text-xs md:text-sm font-medium hover:bg-green-100 hover:border-green-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-green-900/20 dark:text-green-300 dark:border-green-800 dark:hover:bg-green-900/30"
+        >
+          <LaravelIcon
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Laravel
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-green-50 text-green-700 border border-green-200 rounded-xl text-xs md:text-sm font-medium hover:bg-green-100 hover:border-green-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-green-900/20 dark:text-green-300 dark:border-green-800 dark:hover:bg-green-900/30"
+        >
+          <MySQL
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          MySQL
+        </span>
+
+        <span
+          class="group flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-green-50 text-green-700 border border-green-200 rounded-xl text-xs md:text-sm font-medium hover:bg-green-100 hover:border-green-300 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer dark:bg-green-900/20 dark:text-green-300 dark:border-green-800 dark:hover:bg-green-900/30"
+        >
+          <Firebase
+            class="w-5 h-5 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-200"
+          />
+          Firebase
+        </span>
+      </div>
+    </div>
   </div>
 </div>
-
-<style>
-  .chip {
-    @apply flex items-center gap-2 px-4 py-2 border border-gray-300 bg-gray-100 text-gray-700 rounded-full text-sm shadow-sm hover:bg-gray-200 transition;
-  }
-</style>

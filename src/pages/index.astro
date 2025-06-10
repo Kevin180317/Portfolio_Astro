@@ -12,11 +12,15 @@ import Briefcase from "../components/icons/Briefcase.astro";
 import CodeIcon from "../components/icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
 import DocumentIcon from "../components/icons/Document.astro";
+
+const startYear = 2021;
+const currentYear = new Date().getFullYear();
+const yearsExperience = currentYear - startYear;
 ---
 
 <Layout
   title="Portfolio - Desarollador Hybrido"
-  description="Revisa mis proyectos si te interesa contactame para poder crearte una pagina web/aplicacion movil a tu medida."
+  description="Explora mis proyectos freelance y profesionales. Si estás buscando llevar tu idea o emprendimiento al siguiente nivel, contáctame para desarrollar una página web o aplicación móvil a la medida, utilizando tecnología moderna y enfocada en resultados."
 >
   <main class="px-4">
     <SectionContainer class="py-44 pb-32" id="home">
@@ -40,15 +44,22 @@ import DocumentIcon from "../components/icons/Document.astro";
         </a>
       </h1>
       <h2
-        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+        class="text-xl lg:text-2xl text-black dark:text-white text-start leading-relaxed max-w-[700px]"
       >
-        <span>+4 años de experiencia.</span><span
-          class="text-violet-800 dark:text-violet-200"
-        >
-          Desarrollador Web y Desarollador de aplicaciones moviles</span
-        >
-        .<span class="text-black dark:text-white"> De Tijuana, Mexico</span>.
+        <span class="font-semibold">
+          +{yearsExperience} años de experiencia profesional
+        </span>
+        <span class="text-violet-800 dark:text-violet-200">
+          como Desarrollador Web y de Aplicaciones Móviles,
+        </span>
+        <span class="text-black dark:text-white">
+          con un enfoque especializado en soluciones para el sector médico.
+        </span>
+        <span class="text-black dark:text-white">
+          Radicado en Tijuana, México.
+        </span>
       </h2>
+
       <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://linkedin.com/in/kevin-ortega-9abb6b235">
           <LinkedInIcon class="size-4 md:size-6" />
@@ -58,9 +69,9 @@ import DocumentIcon from "../components/icons/Document.astro";
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:ortega.apptj@gmail.com">
+        <SocialPill href="mailto:okhuysen.dev@gmail.com">
           <MailIcon class="size-4 md:size-6" />
-          ortega.apptj@gmail.com
+          okhuysen.dev@gmail.com
         </SocialPill>
         <SocialPill href="/cv.pdf" download="cv.pdf">
           <DocumentIcon class="size-4 md:size-6" />
