@@ -9,6 +9,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+    "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/react": "^4.2.2",
