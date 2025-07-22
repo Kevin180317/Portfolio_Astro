@@ -7,6 +7,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://okhuysendev.vercel.app/",
+  site: "https://okhuysen.dev/",
   integrations: [tailwind(), sitemap(), robotsTxt(), react()],
 });
